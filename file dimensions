@@ -1,0 +1,24 @@
+# Define Colors
+white = (255, 255, 255)
+yellow = (255, 255, 102)
+black = (0, 0, 0)
+red = (213, 50, 80)
+green = (0, 255, 0)
+blue = (50, 153, 213)
+
+# Set screen dimensions
+dis_width = 600
+dis_height = 400
+
+# Create the screen object
+dis = pygame.display.set_mode((dis_width, dis_height))
+pygame.display.set_caption('Snake Game')
+
+# Set the clock for controlling game speed
+clock = pygame.time.Clock()
+
+# Set Snake Block Size
+snake_block = 10
+
+# Snake Speed (in frames per second)
+snake_speed = 15
