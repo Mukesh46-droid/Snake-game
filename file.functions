@@ -1,0 +1,10 @@
+# Function to display the snake
+def our_snake(snake_block, snake_list):
+    for x in snake_list:
+        pygame.draw.rect(dis, green, [x[0], x[1], snake_block, snake_block])
+
+# Function to display messages on screen
+def message(msg, color):
+    font_style = pygame.font.SysFont("bahnschrift", 25)
+    mesg = font_style.render(msg, True, color)
+    dis.blit(mesg, [dis_width / 6, dis_height / 3])
